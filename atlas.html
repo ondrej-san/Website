@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Atlas — Ondrej Szorad</title>
+  <meta name="description" content="Atlas: a browser for serious programmers that runs code, edits files, and organizes projects into tab groups." />
+  <link rel="icon" href="assets/atlas-icon.svg" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header class="nav">
+    <div class="nav-inner">
+      <a class="brand" href="index.html"><span class="dot"></span> Ondrej Szorad</a>
+      <nav class="nav-links">
+        <a href="index.html">Home</a>
+        <a href="projects.html">Projects</a>
+        <a href="atlas.html" class="active">Atlas</a>
+        <a href="chiron.html">Chiron</a>
+        <a href="mods.html">Mods</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="container">
+    <div class="detail-head reveal">
+      <img class="logo" src="assets/atlas-icon.svg" alt="Atlas icon" />
+      <div>
+        <h2 class="page-title">Atlas</h2>
+        <p class="subtitle">A calm browser for serious programmers.</p>
+      </div>
+    </div>
+
+    <section style="padding-top:16px">
+      <p class="lead reveal" style="max-width:760px">
+        Atlas is a desktop browser built for people who write code. Open a file and it does the right thing:
+        runs it, renders it, or opens it in an editor. Everything you're working on lives in
+        <strong>project tab groups</strong>, so a whole project — its scripts, its output, its docs, its
+        reference pages — stays together and comes back when you reopen the app.
+      </p>
+    </section>
+
+    <section>
+      <div class="section-title">What it does</div>
+      <div class="features">
+        <div class="feature reveal"><div class="fi">▶️</div><h4>Runs your code</h4><p>Execute <code>.py</code> and <code>.chi</code> files and see output in an interactive terminal — with input and ANSI colors.</p></div>
+        <div class="feature reveal"><div class="fi">🎨</div><h4>Canvas output</h4><p>If a program prints HTML or SVG, Atlas renders it as a page instead of raw text.</p></div>
+        <div class="feature reveal"><div class="fi">📝</div><h4>Editable, highlighted</h4><p>A built-in editor with syntax highlighting for ~190 languages — including my own Chiron.</p></div>
+        <div class="feature reveal"><div class="fi">🗂️</div><h4>Project tab groups</h4><p>Group tabs by project, rename and recolor them, drag to reorder, and pick up where you left off.</p></div>
+        <div class="feature reveal"><div class="fi">🌐</div><h4>A real browser</h4><p>Search the web and open pages, with popups contained and downloads confirmed.</p></div>
+        <div class="feature reveal"><div class="fi">🛡️</div><h4>Safety built in</h4><p>Confirms before running code, guards against runaway processes, and blocks risky navigations.</p></div>
+        <div class="feature reveal"><div class="fi">🦕</div><h4>Offline game</h4><p>Lose your connection and a full dino runner appears — day/night, birds, ducking, high scores.</p></div>
+        <div class="feature reveal"><div class="fi">⚙️</div><h4>Any language</h4><p>A VS Code-style runtime manager: enable and install runtimes (Node, Go, Rust, Java…) and run any file in the terminal.</p></div>
+        <div class="feature reveal"><div class="fi">🎉</div><h4>Holiday eggs</h4><p>Atlas dresses up for the holidays — snow at Christmas, an upside-down April Fools, and more, big or subtle to match the day.</p></div>
+        <div class="feature reveal"><div class="fi">📂</div><h4>Open anything</h4><p>Files or whole directories, browsable in a tree, all from one "Open" button.</p></div>
+      </div>
+    </section>
+
+    <section>
+      <div class="section-title">Built with</div>
+      <div class="tags">
+        <span class="tag">Electron</span><span class="tag">Node.js</span><span class="tag">Chromium</span>
+        <span class="tag">highlight.js</span><span class="tag">Canvas</span>
+      </div>
+    </section>
+
+    <section>
+      <div class="section-title">Atlas in Action</div>
+      <p>The home screen:</p>
+      <img src="assets/atlas-shot.png">
+      <p>Text highlighting:</p>
+      <img src="assets/atlas-shot2.png">
+      <p>Save button:</p>
+      <img src="assets/atlas-shot3.png">
+      <p>Another instance:</p>
+      <img src="assets/atlas-shot4.png">
+    </section>
+
+    <section>
+      <div class="callout reveal">📸 Tip: drop screenshots into <code>assets/</code> and embed them here with
+        <code>&lt;img src="assets/atlas-shot.png"&gt;</code> to show Atlas in action.</div>
+    </section>
+  </main>
+
+  <footer class="site">
+    <div class="footer-inner">
+      <span>© <span id="year"></span> Ondrej Szorad</span>
+      <span><a href="mailto:ondrej.szorad@gmail.com">ondrej.szorad@gmail.com</a></span>
+    </div>
+  </footer>
+  <script>document.getElementById('year').textContent = new Date().getFullYear();</script>
+</body>
+</html>

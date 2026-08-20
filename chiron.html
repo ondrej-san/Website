@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Chiron — Ondrej Szorad</title>
+  <meta name="description" content="Chiron: a programming language with a block-and-symbol syntax, run by a Python interpreter." />
+  <link rel="icon" href="assets/atlas-icon.svg" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header class="nav">
+    <div class="nav-inner">
+      <a class="brand" href="index.html"><span class="dot"></span> Ondrej Szorad</a>
+      <nav class="nav-links">
+        <a href="index.html">Home</a>
+        <a href="projects.html">Projects</a>
+        <a href="atlas.html">Atlas</a>
+        <a href="chiron.html" class="active">Chiron</a>
+        <a href="mods.html">Mods</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="container">
+    <div class="detail-head reveal">
+      <img class="logo" src="assets/chiron.png" alt="Chiron logo" />
+      <div>
+        <h2 class="page-title">Chiron</h2>
+        <p class="subtitle">A programming language of my own design.</p>
+      </div>
+    </div>
+
+    <section style="padding-top:16px">
+      <p class="lead reveal" style="max-width:760px">
+        Chiron is a language I designed from scratch. Instead of the usual curly braces and keywords, it uses a
+        <strong>block-and-symbol syntax</strong>: blocks are wrapped in <code>*stars*</code>, variables live between
+        <code>:colons:</code>, and commands start with a <code>^caret^</code>. It supports functions, objects,
+        loops, conditionals, imports, and async — all run by an interpreter written in Python.
+      </p>
+    </section>
+
+    <section>
+      <div class="section-title">A taste of Chiron</div>
+      <pre class="code reveal"><span class="k">*file*</span>
+ <span class="v">:filetype:</span><span class="s">"code"</span>
+ <span class="v">:purpose:</span><span class="s">"Fibonacci"</span>
+ <span class="k">*code*</span>
+  <span class="v">:f1:</span><span class="n">0</span>
+  <span class="v">:f2:</span><span class="n">1</span>
+  <span class="v">:list:</span> = [<span class="n">0</span>, <span class="n">1</span>]
+
+  <span class="k">*func*fib*</span>
+   <span class="v">:f3:</span> = <span class="v">:f1:</span> + <span class="v">:f2:</span>
+   <span class="b">^append^</span><span class="v">:list::f3:</span>
+   <span class="b">^say^</span><span class="v">:f3:</span>
+   <span class="v">:f1:</span> = <span class="v">:f2:</span>
+   <span class="v">:f2:</span> = <span class="v">:f3:</span>
+  <span class="k">*func*^end^</span>
+
+  <span class="b">^ask^</span><span class="v">:t:</span><span class="s">"How many numbers? "</span>
+  <span class="k">*loop*</span> <span class="v">:x:</span> from <span class="n">1</span> to <span class="v">:t:</span><span class="k">*</span>
+   <span class="b">^call^</span>fib
+  <span class="k">*loop*^end^</span>
+ <span class="k">*code*^end^</span>
+<span class="k">*file*^end^</span></pre>
+      <p class="callout reveal" style="margin-top:14px">Run a program with
+        <code>python3 interpreter.py yourfile.chi</code> — or just open the <code>.chi</code> file in
+        <a href="atlas.html">Atlas</a>, which runs it for you.</p>
+    </section>
+
+    <section>
+      <div class="section-title">Language features</div>
+      <div class="features">
+        <div class="feature reveal"><div class="fi">🧩</div><h4>Functions &amp; objects</h4><p><code>*func*</code> and <code>*obj*</code> blocks with properties and methods.</p></div>
+        <div class="feature reveal"><div class="fi">🔁</div><h4>Loops &amp; conditionals</h4><p>Counting, for-each, while, and <code>*if* / *else*</code> control flow.</p></div>
+        <div class="feature reveal"><div class="fi">📦</div><h4>Imports</h4><p>Pull in other files — whole, or by line range.</p></div>
+        <div class="feature reveal"><div class="fi">⚡</div><h4>Async</h4><p><code>*async*</code> blocks run concurrently and share globals.</p></div>
+        <div class="feature reveal"><div class="fi">📄</div><h4>Plaintext mode</h4><p>A Markdown-like rendering mode with headings, lists and inline color.</p></div>
+        <div class="feature reveal"><div class="fi">🛠️</div><h4>Self-editing</h4><p>File ops like <code>[changeline]</code> let a program rewrite its own source.</p></div>
+        <div class="feature reveal"><div class="fi">💪</div><h4>Weakly typed</h4><p>Weakly typed, so your code doesn't throw many errors if you change a variable's kind.</p></div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site">
+    <div class="footer-inner">
+      <span>© <span id="year"></span> Ondrej Szorad</span>
+      <span><a href="mailto:ondrej.szorad@gmail.com">ondrej.szorad@gmail.com</a></span>
+    </div>
+  </footer>
+  <script>document.getElementById('year').textContent = new Date().getFullYear();</script>
+</body>
+</html>

@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Minecraft Mods — Ondrej Szorad</title>
+  <meta name="description" content="Minecraft mods by Ondrej Szorad — new content and mechanics, built with Fabric/Forge." />
+  <link rel="icon" href="assets/atlas-icon.svg" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header class="nav">
+    <div class="nav-inner">
+      <a class="brand" href="index.html"><span class="dot"></span> Ondrej Szorad</a>
+      <nav class="nav-links">
+        <a href="index.html">Home</a>
+        <a href="projects.html">Projects!</a>
+        <a href="atlas.html">Atlas</a>
+        <a href="chiron.html">Chiron</a>
+        <a href="mods.html" class="active">Mods</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="container">
+    <section style="padding-top:60px">
+      <h2 class="page-title reveal">Minecraft Mods</h2>
+      <p class="subtitle reveal">New content and mechanics for Minecraft. Built with Fabric/Forge.</p>
+    </section>
+
+    <!-- EDIT ME: replace each placeholder card with a real mod. Copy a card to add more. -->
+    <section style="padding-top:0">
+      <div class="grid">
+        <a class="card reveal" href="assets/mods/Too Many Additions-1.0.0.jar" download>
+          <span class="ico">🧱</span>
+          <h3>Too Many Additions (TMA)</h3>
+          <p>Way too many new blocks and items, including: The Deep Dark dimension, a few new bosses, and more!</p>
+          <div class="tags"><span class="tag">1.20.1</span><span class="tag">Fabric</span></div>
+          <div class="dl">⬇ Download .jar</div>
+        </a>
+        <div class="card reveal">
+          <span class="ico">🌙</span>
+          <h3>Deep Dark - dimension and tools</h3>
+          <p>A new armor set, a new dimension, and more, all within the theme of the Deep Dark.</p>
+          <div class="tags"><span class="tag">26.1.2</span><span class="tag">NeoForge</span></div>
+        </div>
+        <div class="card reveal">
+          <span class="ico">🔷</span>
+          <h3>Bluestone</h3>
+          <p>Adds a parellel component to redstone, with all the components. Glowstone dust acts as the bridge.</p>
+          <div class="tags"><span class="tag">1.20</span><span class="tag">Fabric</span></div>
+        </div>
+        <div class="card soon reveal">
+          <span class="ico">✨</span>
+          <h3>More on the way</h3>
+          <p>New mods will show up here as I release them.</p>
+          <div class="tags"><span class="tag">In progress</span></div>
+        </div>
+      </div>
+    </section>
+
+    <section>
+      <div class="callout reveal">
+        <b>Make a card download a <code>.jar</code>:</b> turn the card into a link with the
+        <code>download</code> attribute —
+        <code>&lt;a class="card" href="assets/mods/your-mod.jar" download&gt; … &lt;/a&gt;</code> —
+        and drop the <code>.jar</code> into <code>assets/mods/</code> (the TMA card above already does this).
+        Clicking it saves the file. To point at Modrinth/CurseForge instead, use their direct
+        download URL as the <code>href</code> (or link to the mod's page without <code>download</code>).
+      </div>
+    </section>
+  </main>
+
+  <footer class="site">
+    <div class="footer-inner">
+      <span>© <span id="year"></span> Ondrej Szorad</span>
+      <span><a href="mailto:ondrej.szorad@gmail.com">ondrej.szorad@gmail.com</a></span>
+    </div>
+  </footer>
+  <script>document.getElementById('year').textContent = new Date().getFullYear();</script>
+</body>
+</html>

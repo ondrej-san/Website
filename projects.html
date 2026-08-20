@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Projects — Ondrej Szorad</title>
+  <meta name="description" content="A grid of projects: Atlas, Chiron, Minecraft mods, and more to come." />
+  <link rel="icon" href="assets/atlas-icon.svg" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header class="nav">
+    <div class="nav-inner">
+      <a class="brand" href="index.html"><span class="dot"></span> Ondrej Szorad</a>
+      <nav class="nav-links">
+        <a href="index.html">Home</a>
+        <a href="projects.html" class="active">Projects</a>
+        <a href="atlas.html">Atlas</a>
+        <a href="chiron.html">Chiron</a>
+        <a href="mods.html">Mods</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="container">
+    <section style="padding-top:60px">
+      <h2 class="page-title reveal">Projects</h2>
+      <p class="subtitle reveal">Everything I'm building, in one place.</p>
+    </section>
+
+    <section style="padding-top:0">
+      <div class="grid">
+        <a class="card reveal" href="atlas.html">
+          <img class="ico-img" src="assets/atlas-icon.svg" alt="" />
+          <h3>Atlas</h3>
+          <p>A browser for viewing code output — runs <code>.chi</code> and <code>.py</code>, renders HTML,
+             edits files with syntax highlighting, and organizes work into project tab groups.</p>
+          <div class="tags"><span class="tag">Electron</span><span class="tag">Node.js</span><span class="tag">Desktop</span></div>
+        </a>
+
+        <a class="card reveal" href="chiron.html">
+          <img class="ico-img" src="assets/chiron.png" alt="" />
+          <h3>Chiron</h3>
+          <p>A programming language of my own design, with a distinctive block-and-symbol syntax and a
+             Python-based interpreter.</p>
+          <div class="tags"><span class="tag">Language</span><span class="tag">Python</span><span class="tag">Interpreter</span></div>
+        </a>
+
+        <a class="card reveal" href="mods.html">
+          <span class="ico">🧱</span>
+          <h3>Minecraft Mods</h3>
+          <p>A collection of mods adding new content and mechanics to Minecraft.</p>
+          <div class="tags"><span class="tag">Minecraft</span><span class="tag">Java</span><span class="tag">Fabric</span></div>
+        </a>
+
+        <!-- Future projects: copy a card above and point it at a new page. -->
+        <div class="card soon reveal">
+          <span class="ico">✨</span>
+          <h3>More coming soon</h3>
+          <p>New projects will land here as I build them.</p>
+          <div class="tags"><span class="tag">In progress</span></div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site">
+    <div class="footer-inner">
+      <span>© <span id="year"></span> Ondrej Szorad</span>
+      <span><a href="mailto:ondrej.szorad@gmail.com">ondrej.szorad@gmail.com</a></span>
+    </div>
+  </footer>
+  <script>document.getElementById('year').textContent = new Date().getFullYear();</script>
+</body>
+</html>

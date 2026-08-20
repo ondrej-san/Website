@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1024" height="1024" viewBox="0 0 1024 1024">
+  <defs>
+    <linearGradient id="g" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#5b9dff"/>
+      <stop offset="1" stop-color="#7c5cff"/>
+    </linearGradient>
+    <linearGradient id="sheen" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#ffffff" stop-opacity="0.18"/>
+      <stop offset="0.5" stop-color="#ffffff" stop-opacity="0"/>
+    </linearGradient>
+  </defs>
+  <rect x="112" y="112" width="800" height="800" rx="180" fill="url(#g)"/>
+  <rect x="112" y="112" width="800" height="800" rx="180" fill="url(#sheen)"/>
+  <!-- Atlas "A" -->
+  <path d="M512 250 L690 774 L604 774 L566 662 L458 662 L420 774 L334 774 Z
+           M484 584 L540 584 L512 500 Z"
+        fill="#ffffff"/>
+  <circle cx="512" cy="360" r="26" fill="#ffffff" opacity="0.9"/>
+</svg>

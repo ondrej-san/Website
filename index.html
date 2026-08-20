@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Ondrej Szorad — Projects</title>
+  <meta name="description" content="Projects by Ondrej Szorad: the Atlas browser, the Chiron programming language, Minecraft mods, and more." />
+  <link rel="icon" href="assets/atlas-icon.svg" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header class="nav">
+    <div class="nav-inner">
+      <a class="brand" href="index.html"><span class="dot"></span> Ondrej Szorad</a>
+      <nav class="nav-links">
+        <a href="index.html" class="active">Home</a>
+        <a href="projects.html">Projects</a>
+        <a href="atlas.html">Atlas</a>
+        <a href="chiron.html">Chiron</a>
+        <a href="mods.html">Mods</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="container">
+    <section class="hero">
+      <div class="eyebrow reveal">Programmer · Language designer · Mod maker</div>
+      <h1 class="reveal">I build <span class="gradient">tools, languages, and worlds</span>.</h1>
+      <p class="lead reveal">Hi, I'm Ondrej. I make software from the ground up — a browser for viewing code output,
+        my own programming language, and mods that reshape Minecraft. Here's what I've been working on.</p>
+      <div class="cta reveal">
+        <a class="btn primary" href="projects.html">Browse projects →</a>
+        <a class="btn ghost" href="atlas.html">See Atlas</a>
+      </div>
+    </section>
+
+    <section>
+      <div class="section-title">Featured</div>
+      <div class="grid">
+        <a class="card reveal" href="atlas.html">
+          <img class="ico-img" src="assets/atlas-icon.svg" alt="" />
+          <h3>Atlas</h3>
+          <p>A calm browser for serious programmers — run <code>.chi</code>/<code>.py</code>, edit code,
+             and keep every project in its own tab group.</p>
+          <div class="tags"><span class="tag">Electron</span><span class="tag">Desktop</span></div>
+        </a>
+        <a class="card reveal" href="chiron.html">
+          <img class="ico-img" src="assets/chiron.png" alt="" />
+          <h3>Chiron</h3>
+          <p>My own programming language — a block-and-symbol syntax with functions, objects,
+             loops, imports and async, run by a Python interpreter.</p>
+          <div class="tags"><span class="tag">Language</span><span class="tag">Interpreter</span></div>
+        </a>
+        <a class="card reveal" href="mods.html">
+          <span class="ico">🧱</span>
+          <h3>Minecraft Mods</h3>
+          <p>Mods that add new content and mechanics to Minecraft. A growing collection —
+             built with Fabric/Forge.</p>
+          <div class="tags"><span class="tag">Minecraft</span><span class="tag">Java</span></div>
+        </a>
+      </div>
+    </section>
+
+    <section>
+      <div class="section-title">About</div>
+      <p class="lead" style="max-width:720px">I like building things that other people can build with —
+        developer tools, a language of my own, and mods that give players new ways to play. This site is my
+        home base; it grows as I ship more.</p>
+    </section>
+  </main>
+
+  <footer class="site">
+    <div class="footer-inner">
+      <span>© <span id="year"></span> Ondrej Szorad</span>
+      <span><a href="mailto:ondrej.szorad@gmail.com">ondrej.szorad@gmail.com</a></span>
+    </div>
+  </footer>
+
+  <script>document.getElementById('year').textContent = new Date().getFullYear();</script>
+</body>
+</html>
